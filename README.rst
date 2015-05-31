@@ -153,6 +153,7 @@ You can also read options from config with:
 
     public function indexAction()
     {
+        $this->get('site_context')->getCurrentBrandingName();
         $this->get('site_context')->getCurrentLocale();
         $this->get('site_context')->getOption('register');
     }
